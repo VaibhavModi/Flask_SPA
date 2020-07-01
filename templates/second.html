@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Second Page</title>
+{% endblock %}
+
+{% block body %}
+<h1>Whoa!! {{name}}</h1>
+<button id="click" onclick=urltoload('/')>Click here to print first</button>
+{% endblock %}
