@@ -1,10 +1,50 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myapp">
 
-{% block head %}
-<title>First Page</title>
-{% endblock %}
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% block body %}
+    {% block head %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-monospace font-weight-bolder" href="#">
+        <img src="" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        LightPurp
+    </a>
+</nav>
+
+<div id="content">
+
 <h1>{{ name }}</h1>
-<button id="click" onclick=urltoload('/second')>Click here to print first</button>
-{% endblock %}
+
+    <a href="#second"><button>Click here to print second page</button></a>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+<script>
+    function locationHashChanged( e ) {
+        console.log(e.oldURL,e.newURL);
+        $.ajax({
+            type:'GET',
+            url:e.newURL,
+            success: function () {
+                if (window.location.href.indexOf("#") >-1){
+                    $('#content').load(location.hash.replace('#','/'));
+                    document.title=location.hash.replace("#","")
+                }
+                else {
+                    $('html').load('/');
+                    document.title='Home';
+                }
+            }
+        });
+    }
+    window.onhashchange = locationHashChanged;
+</script>
+</body>
+</html>
+

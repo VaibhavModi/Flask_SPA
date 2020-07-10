@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     {% block head %}{% endblock %}
 </head>
-<body id="mainbody">
+
+<body>
+<h1>HELLO</h1>
 {% block body %}{% endblock %}
-<script>
-    function urltoload(url){
-        $.ajax({
-            type:'GET',
-            url:url,
-            success: function () {
-                $('html').load(url)
-            }
-        });
-    }
-</script>
+
 </body>
 </html>
