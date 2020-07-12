@@ -3,7 +3,11 @@ function locationHashChanged( e ) {
         type:'GET',
         url:e.newURL,
         success: function () {
-            if (window.location.href.indexOf("#") >-1){
+            if (window.location.hash===""){
+                $('html').load('/');
+                document.title='Home';
+            }
+            else if (window.location.href.indexOf("#") >-1){
                 $('#content').load(location.hash.replace('#','/'));
                 document.title=location.hash.replace("#","")
             }

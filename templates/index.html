@@ -4,51 +4,119 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
     {% block head %}{% endblock %}
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <a class="navbar-brand mb-0 h1" href="#">LightPurp</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#second">Github</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+<body id="body">
+
+<header role="banner">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="index.html"><h3>#LightPurp</h3></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav-section">
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav pl-md-5 ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#second">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="classes.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Classes</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="classes.html">Health Mind Meditation</a>
+                            <a class="dropdown-item" href="classes.html">Mind Balance Yoga</a>
+                            <a class="dropdown-item" href="classes.html">Body Strength Pilates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <form method="post" class="search-form">
+                        <span class="icon ion ion-search"></span>
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </form>
                 </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+            </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- END header -->
 
 <div id="content">
-<h1>{{ name }}</h1>
-    <a href="#second"><button>Click here to print second page</button></a>
+<div class='container-fluid'>
+<div class="jumbotron">
+    <h1 class="display-5">Hello, world!</h1>
+    <h5><p class="lead">This is a Single Page Application. All the pages that are loaded here are dynamic. Your browser is not reloading.</p>
+        <p class="lead">Check out all the links in the navigation bar.</p></h5>
+    <hr class="my-4">
+    <p></p>
+    <a class="btn btn-primary btn-lg" href="http://github.com/VaibhavModi" role="button">Learn more</a>
 </div>
+</div>
+</div>
+    <!--Footer-->
+    <footer class="site-footer" role="contentinfo" id="footer">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4 mb-5">
+                    <h3>About</h3>
+                    <p class="mb-5" id="footer-about"></p>
+                    <ul class="list-unstyled footer-link d-flex footer-social">
+                        <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+                        <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-5 mb-5 pl-md-5">
+                    <h3>Contact Info</h3>
+                    <ul class="list-unstyled footer-link">
+                        <li class="d-block">
+                            <span class="d-block">Address:</span>
+                            <span >Surat, Gujarat, IN</span></li>
+                        <li class="d-block"><span class="d-block">Telephone:</span><span >+91 8320067925</span></li>
+                        <li class="d-block"><span class="d-block">Email:</span><span >vaibhavmodi9842@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled footer-link">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Disclaimers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END footer -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/static/style.min.js"></script>
+<script src="/static/style.js"></script>
 <script src="/static/main.js"></script>
 </body>
 </html>

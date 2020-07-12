@@ -7,7 +7,7 @@ app.url_map.strict_slashes = False
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 
-@app.route('/#')
+@app.route("/#")
 @app.route("/", methods=['GET', 'POST'])
 def index():
     name = 'First Page'
