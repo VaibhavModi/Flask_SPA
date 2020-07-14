@@ -5,7 +5,9 @@ html, body {
 .nav-link {
     font-size:medium;
 }
+
 .jumbotron {
+    font-family: monospace;
     border-radius: 0 !important;
     background-image: url("/static/img/863607.png");
     background-size: auto 100%;
@@ -17,19 +19,17 @@ html, body {
     margin-left:auto;
     margin-right:auto;
 }
+
+
 .navbar-brand{
-    font-size: large;
+    font-size: Medium;
 }
 .navbar {
     background-color: #F2EAD8 !important;
     position: relative;
     top: 0;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
     width: 100%;
     padding: 0 20px;
-    width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 .container {
@@ -39,6 +39,9 @@ html, body {
 .container-fluid {
     padding: 0;
 }
+.header{
+}
+
 
 .header .container{
     padding:0;
@@ -46,6 +49,7 @@ html, body {
 
 #content{
     min-height: 500px;
+
 }
 
 .site-footer {

@@ -18,7 +18,9 @@ function locationHashChanged( e ) {
         }
     });
 }
+
 window.onhashchange = locationHashChanged;
+
 $( document ).ready(function() {
     locationHashChanged(location.hash)
 })
