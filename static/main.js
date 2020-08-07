@@ -22,7 +22,8 @@
 window.onhashchange = newroutetest;
 
 $( document ).ready(function() {
-    newroutetest()
+    if (location.hash !='')
+        newroutetest()
 })
 
 
