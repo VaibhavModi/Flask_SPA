@@ -1,4 +1,4 @@
-function locationHashChanged( e ) {
+/*function locationHashChanged( e ) {
     $.ajax({
         type:'GET',
         url:e.newURL,
@@ -17,22 +17,28 @@ function locationHashChanged( e ) {
             }
         }
     });
-}
+}*/
 
-window.onhashchange = locationHashChanged;
+window.onhashchange = newroutetest;
 
 $( document ).ready(function() {
-    locationHashChanged(location.hash)
+    newroutetest()
 })
 
-/*$(window).bind('hashchange', function() {
-    $.ajax({
-        type:'GET',
-        url:url,
-        success: function (response) {
-            alert(response)
-            $('#content').load(url);
+
+function newroutetest(){
+    var xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function(){
+        if (location.hash==''){
+            $('html').load(this.responseText);
         }
-    });
-    window.history.pushState({url: url}, '', url);
-});*/
+        else if(this.readyState == 4 && this.status==200){
+            document.getElementById("content").innerHTML = this.responseText;
+        }
+    }
+    console.log(location.hash)
+    xhttp.open("GET", location.hash.replace('#','/'), true);
+    xhttp.send();
+}
+
+

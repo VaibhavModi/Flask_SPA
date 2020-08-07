@@ -1,14 +1,15 @@
 html, body {
-    font-family: Rubik;
+    font-family: "Arial Black";
 }
 .carousel-inner > .item > img { width:100%; height:570px; }
 
 
 .jumbotron {
+    height: 100vh;
     font-family: monospace;
     border-radius: 0 !important;
     background-image: url("/static/img/863607.png");
-    background-size: auto 100%;
+    background-size: 100% 100%;
     padding-top: 20%;
     padding-bottom: 20%;
 }
@@ -18,8 +19,6 @@ html, body {
     margin-right:auto;
 }
 
-
-
 .navbar {
     background-color: #F2EAD8 !important;
     position: relative;
@@ -27,12 +26,14 @@ html, body {
     width: 100%;
     padding: 0 20px;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    margin-bottom: 0px;
 }
-
+.navbar .holder{
+    text-align: center
+}
 .navbar-brand{
-    font-size: Medium;
-    font-family: "Rubik", sans-serif !important;
-    font-weight: normal !important;
+    font-family: "Copperplate Gothic Light";
+    margin-top: 4px;
 }
 .nav-link {
     font-weight: bold;
@@ -57,8 +58,7 @@ html, body {
 }
 
 #content{
-    min-height: 500px;
-
+    min-height: calc(100vh - 40px);
 }
 
 .site-footer {
@@ -119,6 +119,7 @@ html, body {
 #footer{
     font-family: "Microsoft YaHei UI" !important;
     background-color: #f2f2f2;
+
 }
 .footer-link{
     color: #808080;
