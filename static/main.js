@@ -21,25 +21,23 @@
 
 window.onhashchange = newroutetest;
 
-$( document ).ready(function() {
-    if (location.hash !='')
-        newroutetest()
-})
+$( document ).ready(newroutetest())
 
 
 function newroutetest(){
+    let url
+    if (location.hash!='') {
+        url = window.location.hash.replace('#', '/')
+    }
+    else{
+        url='/home'
+    }
     var xhttp = new XMLHttpRequest()
-    xhttp.onreadystatechange = function(){
-        if (location.hash==''){
-            $('html').load(this.responseText);
-        }
-        else if(this.readyState == 4 && this.status==200){
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
             document.getElementById("content").innerHTML = this.responseText;
         }
     }
-    console.log(location.hash)
-    xhttp.open("GET", location.hash.replace('#','/'), true);
+    xhttp.open("GET", url, true);
     xhttp.send();
 }
-
-

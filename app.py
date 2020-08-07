@@ -14,6 +14,9 @@ def index():
     name = 'First Page'
     return render_template('index.html', name=name)
 
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 @app.route('/second', methods=['GET', 'POST'])
 def second():
