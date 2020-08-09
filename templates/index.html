@@ -11,8 +11,35 @@
 </head>
 
 <body id="body">
-
 <header role="banner">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container-fluid">
+        <h3><a class="navbar-brand" href="/#home">LightPurp</a></h3>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#second">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<!--<header role="banner">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="/#"><h3>LightPurp</h3></a>
@@ -32,73 +59,72 @@
                         <a class="nav-link" href="/#second">Second</a>
                     </li>
 
-                    <!--<li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="classes.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Classes</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             <a class="dropdown-item" href="classes.html"></a>
                             <a class="dropdown-item" href="classes.html"></a>
                             <a class="dropdown-item" href="classes.html"></a>
                         </div>
-                    </li>-->
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#footer">Contact</a>
                     </li>
                 </ul>
-                <div class="navbar-nav ml-auto">
-                    <form method="post" class="search-form">
-                        <span class="icon ion ion-search"></span>
-                        <input type="text" class="form-control" placeholder="Search...">
-                    </form>
-                </div>
+
             </div>
             </div>
         </div>
     </nav>
-</header>
+</header>-->
 <!-- END header -->
 
 <div id="content"></div>
     <!--Footer-->
-    <footer class="site-footer" role="contentinfo" id="footer">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-4 mb-5">
-                    <h3>About</h3>
-                    <p class="mb-4" id="footer-about">This is a web application built using Flask micro-web-framework for server-side and HTML, Js, CSS for client-side.</p>
-                    <ul class="list-unstyled footer-link d-flex footer-social">
-                        <li><a href="https://twitter.com/vaibhavmodir" target="_blank" class="p-2"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-                        <li><a href="" class="p-2"><span></span></a></li>
-                    </ul>
+<!-- Site footer -->
+<footer class="site-footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">Experimenting with this personal website.</p>
+            </div>
 
-                </div>
-                <div class="col-md-5 mb-5 pl-md-5">
-                    <h3>Contact Info</h3>
-                    <ul class="list-unstyled footer-link">
-                        <li class="d-block">
-                            <span class="d-block">Address:</span>
-                            <span >Surat, Gujarat, IN</span></li>
-                        <li class="d-block"><span class="d-block">Telephone:</span><span >+91 8320067925</span></li>
-                        <li class="d-block"><span class="d-block">Email:</span><span >vaibhavmodi9842@gmail.com</span></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-5">
-                    <h3>Quick Links</h3>
-                    <ul class="list-unstyled footer-link">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Disclaimers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
+            <div class="col-xs-6 col-md-3">
+                <h6>Categories</h6>
+                <ul class="footer-links">
+                    <li><a href="#">UI Design</a></li>
+                </ul>
+            </div>
 
-                </div>
+            <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                    <a href="https://github.com/VaibhavModi" target="_blank">VaibhavModi</a>.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-laptop"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
     <!-- END footer -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

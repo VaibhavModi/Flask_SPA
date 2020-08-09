@@ -21,7 +21,9 @@
 
 window.onhashchange = newroutetest;
 
-$( document ).ready(newroutetest())
+$( document ).ready(function(){
+    newroutetest()
+})
 
 
 function newroutetest(){
