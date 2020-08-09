@@ -265,3 +265,8 @@ html, body {
     font-weight: 700; }
 .entry2 h2 a {
     color: #000; }
+
+.site-section img{
+    height: 300px;
+    width: 300px;
+}
