@@ -1,5 +1,10 @@
 html, body {
     font-family: Nunito;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 .carousel-inner > .item > img { width:100%; height:570px; }
 
