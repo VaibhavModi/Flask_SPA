@@ -4,19 +4,21 @@ html, body {
 .carousel-inner > .item > img { width:100%; height:570px; }
 
 
-.jumbotron {
-    height: 100vh;
+.container-fluid .jumbotron {
+    top: 40%;
+    height: 90vh;
     font-family: monospace;
     border-radius: 0 !important;
     background-image: url("/static/img/863607.png");
-    background-size: 100% 100%;
-    padding-top: 20%;
+    padding-top: 13%;
     padding-bottom: 20%;
+    background-position: bottom;
+    margin-bottom: 0 !important;
+    background-size: cover;
 }
-.jumbotron img{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+
+.jumbotron p{
+    align-content: center;
 }
 
 .navbar {
@@ -26,7 +28,7 @@ html, body {
     width: 100%;
     padding: 0 20px;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .navbar .holder{
     text-align: center
@@ -37,10 +39,12 @@ html, body {
     display: flex;
     align-items: center;
 }
-
+.navbar h3{
+    font-weight: lighter !important;
+}
 .navbar-nav {
     font-size: 12px;
-    font-weight: bolder;
+    font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -168,7 +172,7 @@ html, body {
 .social-icons
 {
     padding-left: 0;
-    padding-right: 34%;
+    padding-right: 32%;
     margin-bottom:0;
     list-style:none
 }
@@ -269,3 +273,175 @@ html, body {
 .site-section .entry2 {
     padding-left: 20px;
     padding-right: 20px; }
+
+
+
+/*Masthead Header*/
+
+.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+}
+
+.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
+}
+
+.masthead .page-heading,
+.masthead .post-heading,
+.masthead .site-heading {
+    padding: 200px 0 150px;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .masthead .page-heading,
+    .masthead .post-heading,
+    .masthead .site-heading {
+        padding: 200px 5%;
+    }
+}
+
+.masthead .page-heading,
+.masthead .site-heading {
+    text-align: center;
+}
+
+.masthead .page-heading h1,
+.masthead .site-heading h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.masthead .page-heading .subheading,
+.masthead .site-heading .subheading {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .masthead .page-heading h1,
+    .masthead .site-heading h1 {
+        font-size: 80px;
+    }
+}
+.masthead .post-heading h1 {
+    font-size: 35px;
+}
+
+.masthead .post-heading .meta,
+.masthead .post-heading .subheading {
+    line-height: 1.1;
+    display: block;
+}
+
+.masthead .post-heading .subheading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 30px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.masthead .post-heading .meta {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.masthead .post-heading .meta a {
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .masthead .post-heading h1 {
+        font-size: 55px;
+    }
+    .masthead .post-heading .subheading {
+        font-size: 30px;
+    }
+
+}
+.post-preview > a {
+    color: #212529;
+}
+
+.post-preview > a:focus, .post-preview > a:hover {
+    text-decoration: none;
+    color: #0085A1;
+}
+
+.post-preview > a > .post-title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.post-preview > a > .post-subtitle {
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.post-preview > .post-meta {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: #868e96;
+}
+
+.post-preview > .post-meta > a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+    text-decoration: underline;
+    color: #0085A1;
+}
+
+@media only screen and (min-width: 768px) {
+    .post-preview > a > .post-title {
+        font-size: 36px;
+    }
+
+}
+#projects h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#projects a {
+    color: #212529;
+    transition: all 0.2s;
+}
+
+#projects a:focus, a:hover {
+    color: #0085a1 !important;
+}
+
+@media (max-width: 1000px){
+    #projects .post-preview{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .container-fluid .jumbotron{
+        padding-left: 10%;
+        height: 100vh;
+        padding-top: 20%;
+        background-image: url("/static/img/photo-1518972734183-c5b490a7c637.jpg");
+    }
+}

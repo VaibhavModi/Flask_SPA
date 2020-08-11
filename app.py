@@ -21,7 +21,7 @@ def home():
 @app.route('/second', methods=['GET', 'POST'])
 def second():
     name = "Second Page"
-    return render_template('second.html', name=name)
+    return render_template('projects.html', name=name)
 
 @app.route('/contact')
 def contact():
@@ -30,4 +30,4 @@ def contact():
 
 if __name__ == '__main__':
     #serve(app, host="0.0.0.0", port=8080)
-    app.run()
+    app.run(debug=True)
