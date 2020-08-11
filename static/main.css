@@ -34,7 +34,7 @@ html, body {
     text-align: center
 }
 .navbar-brand{
-    font-family: "Copperplate Gothic Light";
+    font-family: "Copperplate Gothic Light", Nunito, 'SansSerif';
     font-size: 1.70rem;
     display: flex;
     align-items: center;
