@@ -19,27 +19,27 @@
     });
 }*/
 
-window.onhashchange = newroutetest;
+// window.onhashchange = newroutetest;
 
-$( document ).ready(function(){
-    newroutetest()
-})
+// $( document ).ready(function(){
+//     newroutetest()
+// })
 
 
-function newroutetest(){
-    let url
-    if (location.hash!='') {
-        url = window.location.hash.replace('#', '/')
-    }
-    else{
-        url='/home'
-    }
-    var xhttp = new XMLHttpRequest()
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("content").innerHTML = this.responseText;
-        }
-    }
-    xhttp.open("GET", url, true);
-    xhttp.send();
-}
+// function newroutetest(){
+//     let url
+//     if (location.hash!='') {
+//         url = window.location.hash.replace('#', '/')
+//     }
+//     else{
+//         url='/home'
+//     }
+//     var xhttp = new XMLHttpRequest()
+//     xhttp.onreadystatechange = function () {
+//         if (this.readyState == 4 && this.status == 200) {
+//             document.getElementById("content").innerHTML = this.responseText;
+//         }
+//     }
+//     xhttp.open("GET", url, true);
+//     xhttp.send();
+// }

@@ -1,82 +1,40 @@
-<div id="projects">
-<header class="masthead" style="background-image: url('/static/img/deer.jpg')">
-    <div class="overlay"></div>
+{% extends "index.html" %}
+{% block content %}
+<div class="site-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>WRITINGS</h1>
-                    <span class="subheading">These are the part of my personal work</span>
+            <div class="col-lg-4 mb-4">
+                <div class="entry2">
+                    <a href="https://github.com/VaibhavModi/TrialAutoRenew_Acrobat" target="_blank"><img src="/static/img/Adobe.png" alt="Image" class="img-fluid rounded" height="500" width="380"></a>
+                    <div class="excerpt">
+                        <h2><a href="https://github.com/VaibhavModi/TrialAutoRenew_Acrobat" target="_blank">Adobe Acrobat Trial Auto-Renew</a></h2>
+                        <span class="d-inline-block mt-1">On - Python</span>
+                        <p>This is a tool to renew Adobe Acrobat 2017 trial period incase someone has missed the opportunity to actually get the real trial out of it. [For Educational Purpose]</p>
+                        <p><a href="">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="entry2">
+                    <a href="https://github.com/VaibhavModi/MedX" target="_blank"><img src="/static/img/medical-logo.jpg" alt="Image" class="img-fluid rounded"  height="500" width="380"></a>
+                    <div class="excerpt">
+                        <h2><a href="https://github.com/VaibhavModi/MedX" target="_blank">MedX - Medical Utilities App</a></h2>
+                        <p>A Visual Basic .NET application with OLEDB API connection to MS Access database that can be used for medical purposes such as veiwing health history, making appointments, finding a nearby practitoner, self diagonasing [beta] and other health and fitness purposes.</p>
+                        <p><a href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="entry2">
+                    <a id="sudoku_img" href="https://github.com/VaibhavModi/Sudoku_Solver" target="_blank"><img src="/static/img/sudoku.jpg" alt="Image" class="img-fluid rounded" height="700" width="300"></a>
+                    <div class="excerpt">
+                        <h2><a href="https://github.com/VaibhavModi/Sudoku_Solver" target="_blank">Sudoku Solver</a></h2>
+                        <p>Backtracking algorithm to solve 9x9 Sudoku Puzzle</p>
+                        <p><a href="#">Read More</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
-
-<!-- Main Content -->
-<div class="container" >
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="post-preview">
-                <a href="">
-                    <h2 class="post-title">
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Problems look mighty small from 150 miles up
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on September 24, 2019</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <a href="">
-                    <h2 class="post-title">
-                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                    </h2>
-                </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on September 18, 2019</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <a href="">
-                    <h2 class="post-title">
-                        Science has not yet mastered prophecy
-                    </h2>
-                    <h3 class="post-subtitle">
-                        We predict too much for the next year and yet far too little for the next ten.
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on August 24, 2019</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <a href="">
-                    <h2 class="post-title">
-                        Failure is not an option
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on July 8, 2019</p>
-            </div>
-            <hr>
-            <!-- Pager
-            <div class="clearfix">
-                <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-            </div>
-            -->
-        </div>
-    </div>
 </div>
-<hr>
-</div>
+{% endblock %}

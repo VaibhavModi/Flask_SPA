@@ -2,29 +2,49 @@
 
 from flask import Flask, render_template, request, make_response
 #from waitress import serve
+from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'root'
+app.config['MYSQL_DB'] = 'Students'
 
-@app.route("/#")
+mysql = MySQL(app)
+
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    name = 'First Page'
-    return render_template('index.html', name=name)
+    title = 'First Page'
+    return render_template('index.html', title=title)
 
 @app.route('/home')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
-@app.route('/second', methods=['GET', 'POST'])
+@app.route('/projects')
+def projects():
+    title = 'Projects'
+    return render_template('projects.html',title=title)
+
+@app.route('/blogs', methods=['GET', 'POST'])
 def second():
-    name = "Second Page"
-    return render_template('projects.html', name=name)
+    title = "Blogs"
+    return render_template('blogs.html', title=title)
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    if request.method == 'POST':
+        userdetails = request.form
+        fname = userdetails['fname']
+        cur = mysql.connection.cursor()
+        cur.execute("INSERT INTO student(idnum,name) VALUES(%i,%s)",(54252,'Testing1'))
+        mysql.connection.commit()
+        cur.close()
+        print('success')
+        # return "{name}"
     return render_template('contact.html')
 
 
