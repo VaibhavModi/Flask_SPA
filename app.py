@@ -15,7 +15,7 @@ app.config['MYSQL_DB'] = 'Students'
 
 mysql = MySQL(app)
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     title = 'Home'
