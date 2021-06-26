@@ -16,13 +16,10 @@ app.config['MYSQL_DB'] = 'Students'
 mysql = MySQL(app)
 
 @app.route("/", methods=['GET', 'POST'])
-def index():
-    title = 'home'
-    return render_template('index.html', title=title)
-
-@app.route('/home')
+@app.route('/home', methods=['GET', 'POST'])
 def home():
-    return render_template('index.html')
+    title = 'Home'
+    return render_template('index.html', title=title)
 
 @app.route('/projects')
 def projects():
