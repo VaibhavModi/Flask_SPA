@@ -2,7 +2,7 @@
 
 > This is a web application built using Flask micro-web-framework for server-side and HTML, JS, CSS for client-side.
 
-> The website is live at lightpurp.herokuapp.com
+> The website is live at [lightpurp.herokuapp.com](lightpurp.herokuapp.com)
 
 # Features:
 - The application's client-side routing is handled by AJAX for loading dynamic pages into the main page.
