@@ -17,7 +17,7 @@ mysql = MySQL(app)
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    title = 'First Page'
+    title = 'home'
     return render_template('index.html', title=title)
 
 @app.route('/home')
