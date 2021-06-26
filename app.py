@@ -39,11 +39,10 @@ def contact():
     if request.method == 'POST':
         userdetails = request.form
         fname = userdetails['fname']
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO student(idnum,name) VALUES(%i,%s)",(54252,'Testing1'))
-        mysql.connection.commit()
-        cur.close()
-        print('success')
+        # cur = mysql.connection.cursor()
+        # cur.execute("INSERT INTO student(idnum,name) VALUES(%i,%s)",(54252,'Testing1'))
+        # mysql.connection.commit()
+        # cur.close()
         # return "{name}"
     return render_template('contact.html')
 
