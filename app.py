@@ -2,19 +2,19 @@
 
 from flask import Flask, render_template, request, make_response
 #from waitress import serve
-from flask_mysqldb import MySQL
+# from flask_mysqldb import MySQL
 
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'root'
-app.config['MYSQL_DB'] = 'Students'
+# app.config['MYSQL_HOST'] = 'localhost'
+# app.config['MYSQL_USER'] = 'root'
+# app.config['MYSQL_PASSWORD'] = 'root'
+# app.config['MYSQL_DB'] = 'Students'
 
-mysql = MySQL(app)
+# mysql = MySQL(app)
 
 @app.route("/")
 @app.route('/home', methods=['GET', 'POST'])
