@@ -1,6 +1,6 @@
 # Flask - Single Page Application
 
-> This is a web application built using Flask micro-web-framework for server-side and HTML, JS, CSS for client-side.
+> This is a web application built using Flask micro-web-framework for server-side and HTML, CSS, JavaScript for client-side.
 
 > The website is live at [lightpurp.herokuapp.com](https://lightpurp.herokuapp.com/)
 
